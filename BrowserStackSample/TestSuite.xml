@@ -1,0 +1,29 @@
+<suite thread-count="3" name="Suite" parallel="tests">
+	<test name="FirstEnv">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browser_version" value="44.0"/>
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<classes>
+			<class name="SeleniumTests" />
+		</classes>
+	</test>
+	<test name="SecondEnv">
+		<parameter name="browser" value="Safari" />
+		<parameter name="browser_version" value="9.0" />
+		<parameter name="os" value="OS X" />
+		<parameter name="os_version" value="El Capitan" />
+		<classes>
+			<class name="SeleniumTests" />
+		</classes>
+	</test>
+	<test name="ThirdEnv">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser_version" value="40.0" />
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="XP" />
+		<classes>
+			<class name="SeleniumTests" />
+		</classes>
+	</test>
+</suite>
